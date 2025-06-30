@@ -1,9 +1,10 @@
 site_name: FreeBirds Club Documentation
 site_url: https://docs.freebirdsclub.org
-repo_url: https://github.com/freebirdsclub/docs
 
 theme:
   name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
   features:
     - navigation.tabs
     - navigation.sections
@@ -24,23 +25,9 @@ theme:
         name: Switch to light mode
 
 plugins:
-  - i18n:
-      default_language: en
-      languages:
-        en: English
-        ru: Русский
-        zh: 中文
-        es: Español
-        ja: 日本語
+  - search
   - git-revision-date-localized:
       type: datetime
-  - git-committers:
-      repository: freebirdsclub/docs
-      branch: main
-  - awesome-pages
-  - social:
-      cards: true
-  - search
 
 markdown_extensions:
   - admonition
@@ -58,9 +45,12 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - Branding:
+      - Overview: branding.md
+      - Brand Guidelines: branding/01-brand-guidelines.md
+      - Colors: branding/01-colors.md
   - Getting Started: 
       - Quick Start: getting-started/quick-start.md
-  - Branding: branding.md
   - Roadmap: roadmap.md
   - Market Analysis: market.md
   - Technical Docs: 
