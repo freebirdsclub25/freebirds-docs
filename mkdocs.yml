@@ -58,6 +58,8 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - Getting Started: 
+      - Quick Start: getting-started/quick-start.md
   - Branding: branding.md
   - Roadmap: roadmap.md
   - Market Analysis: market.md
@@ -65,3 +67,9 @@ nav:
       - Overview: tech/index.md
       - API Reference: tech/api.md
   - Community: community.md
+  - Languages:
+      - English: index.md
+      - Русский: index.ru.md
+      - 中文: index.zh.md
+      - Español: index.es.md
+      - 日本語: index.ja.md
