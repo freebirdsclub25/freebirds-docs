@@ -1,0 +1,10 @@
+:root {
+  --fbcl-primary: #9945FF;
+  --fbcl-secondary: #14F195;
+  --fbcl-accent: #1C2255;
+  --fbcl-neutral: #F8F9FA;
+  --fbcl-orange: #FF8C42;
+  --fbcl-gradient-primary: linear-gradient(135deg, #9945FF, #14F195);
+  --fbcl-gradient-secondary: linear-gradient(45deg, #1C2255, #9945FF);
+}
+/* Hero section, cards, metric-numbers, ... (см. рекомендации выше) */

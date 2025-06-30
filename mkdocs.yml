@@ -1,0 +1,67 @@
+site_name: FreeBirds Club Documentation
+site_url: https://docs.freebirdsclub.org
+repo_url: https://github.com/freebirdsclub/docs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        ru: Русский
+        zh: 中文
+        es: Español
+        ja: 日本語
+  - git-revision-date-localized:
+      type: datetime
+  - git-committers:
+      repository: freebirdsclub/docs
+      branch: main
+  - awesome-pages
+  - social:
+      cards: true
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+
+extra_css:
+  - css/custom.css
+
+extra_javascript:
+  - js/live-data.js
+
+nav:
+  - Home: index.md
+  - Branding: branding.md
+  - Roadmap: roadmap.md
+  - Market Analysis: market.md
+  - Technical Docs: 
+      - Overview: tech/index.md
+      - API Reference: tech/api.md
+  - Community: community.md
